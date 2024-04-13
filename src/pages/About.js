@@ -1,7 +1,7 @@
-import Footer from "./Footer"
-import Nav from "./Nav"
+import Footer from "../sections/Footer"
+import Nav from "../sections/Nav"
 // static files
-import '../App.sass'
+import '../static/sass/App.sass'
 
 export default function About() {
     return (

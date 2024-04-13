@@ -1,6 +1,6 @@
-import Footer from "./Footer";
-import Nav from "./Nav";
-import "../MyAccount.sass"
+import Footer from "../sections/Footer";
+import Nav from "../sections/Nav";
+import "../static/sass/MyAccount.sass"
 
 export default function MyAccount () {
     return (

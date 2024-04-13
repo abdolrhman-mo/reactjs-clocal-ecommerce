@@ -1,0 +1,72 @@
+@use 'base'
+    
+// product element
+.product
+    width: 100%
+    margin: 0 auto
+    margin-bottom: 50px
+    .image
+        min-height: 500px
+        background-size: 100%
+        transition: all 0.3s ease
+        background-position: center
+        cursor: pointer
+        padding: 15px
+        position: relative
+        &:hover 
+            background-size: 110%
+            div svg
+                opacity: 1
+        p
+            color: #fff
+            background: base.$color1
+            border-radius: 15px
+            display: inline-block
+            font-size: 13px
+            font-weight: 700
+            padding: 6px 10px
+        div
+            // center
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            // justify content inside this div
+            width: 25%
+            display: flex
+            justify-content: space-between
+            svg
+                color: #383838
+                background: #fff
+                padding: 12px
+                border-radius: 50%
+                font-size: 20px
+                font-weight: 400
+                // display animation
+                opacity: 0
+                transition: opacity 0.6s ease, bottom 0.3s ease
+                // hover animation
+                position: relative
+                bottom: 0
+                &:hover
+                    color: base.$color1
+                    bottom: 5px
+    .text
+        h3
+            padding: 20px 0 0
+            cursor: pointer
+            transition: all .3s ease
+            &:hover
+                color: base.$color1
+        p
+            span.line-through
+                text-decoration: line-through
+                color: #b3b3b3
+        a
+            color: #fff
+            text-decoration: none
+            transition: all .3s ease
+            &:hover
+                color: base.$color1
+            svg
+                padding-right: 10px

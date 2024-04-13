@@ -1,5 +1,6 @@
 import { products } from '../data'
-import Product from '../Product'
+import Product from '../components/Product'
+import '../static/sass/App.sass'
 
 // TODO: Max num of items in gallery
 

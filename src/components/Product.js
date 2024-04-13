@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../static/sass/Product.sass'
 
 function Product({name, imgUrl, sale, price1, price2, index}) {
   index++

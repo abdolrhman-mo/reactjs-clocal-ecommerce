@@ -1,9 +1,15 @@
-import slide1front from './slide1front.png'
-import slide2front from './slide2front.png'
-import slide3front from './slide3front.webp'
-import slide1back from './slide1back.jpg'
-import slide2back from './slide1back.jpg'
-import slide3back from './slide3back.webp'
+import slide1front from './static/imgs/slide1front.png'
+import slide2front from './static/imgs/slide2front.png'
+import slide3front from './static/imgs/slide3front.webp'
+import slide1back from './static/imgs/slide1back.jpg'
+import slide2back from './static/imgs/slide1back.jpg'
+import slide3back from './static/imgs/slide3back.webp'
+
+import dream1 from './static/imgs/dream1.webp'
+import dream2 from './static/imgs/dream2.webp'
+import dream3 from './static/imgs/dream3.webp'
+import coll1 from './static/imgs/coll1.webp'
+import coll2 from './static/imgs/coll2.webp'
 
 export const reviews = [
     "u don't need a rate from anyone guys <br> ur designs are undoubtly 10 outta 10",
@@ -35,12 +41,6 @@ export const slides = [
         backImg: slide3back
     },
 ]
-
-import dream1 from './dream1.webp'
-import dream2 from './dream2.webp'
-import dream3 from './dream3.webp'
-import coll1 from './coll1.webp'
-import coll2 from './coll2.webp'
 
 export const products = [
     {

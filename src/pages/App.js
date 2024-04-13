@@ -2,20 +2,19 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom"
 
 // my components & data
-import Nav from './components/Nav'
-import Header from './components/Header'
-import Reviews from './components/Reviews'
-import ProductGallery from './components/ProductGallery'
-import Footer from './components/Footer'
-import About from "./components/About"
-import ProductPage from "./components/ProductPage"
+import Nav from '../sections/Nav'
+import Header from '../sections/Header'
+import Reviews from '../sections/Reviews'
+import ProductGallery from '../sections/ProductGallery'
+import Footer from '../sections/Footer'
+import About from "./About"
+import ProductPage from "./ProductPage"
 // static files
-import './App.sass'
-import MyAccount from "./components/MyAccount"
+import '../static/sass/App.sass'
+import MyAccount from "./MyAccount"
 
 // TODO: shoppppppppppppppppppppppppppppppping carttttttttttttttttttttttttttttttttttttttttttt
 

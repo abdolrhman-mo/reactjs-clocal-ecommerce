@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom"
 import { products, slides } from "../data"
-import Nav from "./Nav"
-import Footer from "./Footer"
-import ProductGallery from "./ProductGallery"
-import "../ProductPage.sass"
+import Nav from "../sections/Nav"
+import Footer from "../sections/Footer"
+import ProductGallery from "../sections/ProductGallery"
+import "../static/sass/ProductPage.sass"
 
 export default function ProductPage() {
     let { index } = useParams()

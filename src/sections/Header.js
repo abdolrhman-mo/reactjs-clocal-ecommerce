@@ -13,7 +13,7 @@ export default function Header() {
     //     }
     // }, 5000);
     return (
-        <header>
+        <header className='hero'>
             <div className="slide">
                 <div className="container">
                     <div className="bg-image" style={{background: 'url(' + slide.backImg + ')'}}></div>
@@ -25,7 +25,7 @@ export default function Header() {
                             <div className="text">
                                 <h2>{slide.name}</h2>
                                 <p>{slide.describtion}</p>
-                                <a href="">Buy Now<i className="fa-solid fa-arrow-right"></i></a>
+                                <a className='cta' href="">Order Now <i className="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

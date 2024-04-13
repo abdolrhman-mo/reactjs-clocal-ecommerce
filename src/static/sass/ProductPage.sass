@@ -1,21 +1,20 @@
-$theme-color: #8F43EE
-$background-color: #171516
-    
+@use 'base'
+
 .product-page
     color: #fff 
-    background: $background-color
+    background: base.$color2
     padding-top: 80px
     .line-through
         opacity: .5
         text-decoration: line-through
         padding-right: 7px
     .theme-color
-        color: $theme-color
+        color: base.$color1
     .gray
         opacity: .5
     select
         color: #fff
-        background: $background-color
+        background: base.$color2
         padding: 10px
         border: none
         width: 70%
@@ -30,7 +29,7 @@ $background-color: #171516
             justify-content: space-evenly
             p.sale
                 color: #fff
-                background: $theme-color
+                background: base.$color1
                 width: fit-content
                 border-radius: 15px
                 display: inline-block

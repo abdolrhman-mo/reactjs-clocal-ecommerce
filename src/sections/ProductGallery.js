@@ -1,27 +1,44 @@
-import { products } from '../data'
+import { useState, useEffect } from 'react'
 import Product from '../components/Product'
 import '../static/sass/App.sass'
 
-// TODO: Max num of items in gallery
 
 export default function ProductGallery({title, tag}) {
-    let filtered = []
-    if (tag === 'all') {
-        filtered = products.map(product => product)
-    } else {
-        filtered = products.filter(product =>
-            product.tag[0] === tag || product.tag[1] == tag
-        )
-    }
-    const listItems = filtered.map(product =>
+
+	// this.state = {
+	// 	products: [],
+	// 	DataisLoaded: false,
+	// };
+
+	const [products, setProducts] = useState([])
+    
+	useEffect(() => {
+
+		fetch("http://localhost:8000/api/products/")
+		.then((res) => res.json())
+		.then((json) => {
+			setProducts(json)
+		})
+	}, [])
+
+    // if (tag === 'all') {
+    //     filtered = products.map(product => product)
+    // } else {
+    //     filtered = products.filter(product =>
+    //         product.tag[0] === tag || product.tag[1] == tag
+    //     )
+    // }
+    const listItems = products.map(product =>
         <div className="col-6">
             <Product 
                 name={product.name}
-                imgUrl={product.imgUrl}
-                sale={product.sale}
+				// href="static/images/{{product.image}}"
+                imgUrl={product.img}
+                // sale={product.sale}
                 price1={product.price1}
                 price2={product.price2}
-                index={product.index}
+				quantity={product.quantity}
+                product_id={product.id}
             />
         </div>
         )
